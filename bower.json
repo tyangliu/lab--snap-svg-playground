@@ -1,0 +1,20 @@
+{
+  "name": "snap-svg-playground",
+  "version": "1.0",
+  "homepage": "https://github.com/tyangliu/snap-svg-playground",
+  "authors": [
+    "tyangliu <tyangliu@gmail.com>"
+  ],
+  "description": "snap.svg demos and presentation",
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "snap.svg": "~0.4.1"
+  }
+}
