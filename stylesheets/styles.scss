@@ -1,0 +1,134 @@
+@import "bourbon/bourbon";
+
+$primary-font-family: "ff-tisa-web-pro", serif;
+$heading-font-family: "ff-tisa-sans-web-pro", sans-serif;
+$code-font-family: "source-code-pro", monospace;
+
+
+body {
+  font-family: $primary-font-family;
+  color: white;
+  font-size: 24px;
+}
+
+.reveal {
+
+  .slides {
+    text-align: left;
+    section { @include clearfix; }
+  }
+
+  .left-half {
+    float: left;
+    width: 50%;
+  }
+
+  .right-half {
+    float: right;
+    width: 50%;
+  }
+
+  h1 {
+    font-family: $heading-font-family;
+    font-size: 48px;
+    font-weight: bold;
+    font-style: italic;
+    margin-bottom: 30px;
+  }
+
+  p {
+    margin-bottom: 14px;
+  }
+
+  li {
+    margin-bottom: 14px;
+  }
+
+  pre {
+
+  }
+  code {
+    font-family: $code-font-family;
+    font-size: 14px;
+    color: #000;
+    padding: 20px;
+    @include border-top-radius(3px);
+    @include border-right-radius(3px);
+    @include border-bottom-radius(3px);
+    @include border-left-radius(3px);
+  }
+
+  p.subtitle {
+    font-style: italic;
+  }
+
+  .title-page-container {
+    text-align: center;
+    position: relative;
+    box-sizing: border-box;
+  }
+    #title-pinwheel {
+      width: 600px;
+      height: 600px;
+    }
+    .title-text {
+      position: absolute;
+      top: 43.33%;
+      left: 49.33%;
+      text-align: left;
+
+      h1 {
+        margin-bottom: 0;
+      }
+    }
+      .subtitle-container {
+        float: right;
+      }
+
+      p.subtitle {
+        margin-bottom: 30%;
+      }
+
+      .author-name {
+        font-size: 0.75em;
+        background: url('../images/tliu-logo-white.svg') no-repeat left top;
+        background-size: 25px;
+        padding: 7px 0 7px 30px;
+        text-align: right;
+      }
+
+  .logo-screenshot {
+    height: 160px;
+    margin-top: 20px;
+    display: inline-block;
+  }
+  .logo-actual {
+    height: 131px;
+    margin-bottom: 11px;
+    margin-left: 24px;
+    display: inline-block;
+  }
+
+  .snap-svg-logo {
+    width: 25%;
+    float: right;
+  }
+
+  .subtext {
+    font-style: italic;
+  }
+
+  .pyth-tree {
+    height: 100%;
+  }
+
+  .one45-slide {
+    width: 100%;
+    height: 100%;
+  }
+  #one45-background {
+    min-width: 100%;
+    height: 600px;
+  }
+}
+
