@@ -122,8 +122,7 @@ function loadBackground ( image ) {
     }
 
     function moveWave2(){
-        wave2.animate(
-            { transform: 't-20,40'}, 750, mina.easeInOutQuad, function(){
+        wave2.animate({ transform: 't-20,40'}, 750, mina.easeInOutQuad, function(){
                 wave2.animate({ transform: 't0,0'}, 1000, mina.easeInOutQuad, function() {
                         moveWave2()
                     }
